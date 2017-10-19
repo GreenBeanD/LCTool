@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		544A1F080DEC0DF08DD943D0 /* Pods_LCTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FF61F6011C244ED499D037B /* Pods_LCTool.framework */; };
+		870AAF7C1F944E040034155A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF7B1F944E040034155A /* AppDelegate.swift */; };
+		870AAF7E1F944E040034155A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF7D1F944E040034155A /* ViewController.swift */; };
+		870AAF831F944E040034155A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870AAF821F944E040034155A /* Assets.xcassets */; };
+		870AAF861F944E040034155A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870AAF841F944E040034155A /* LaunchScreen.storyboard */; };
+		870AAF911F944E040034155A /* LCToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF901F944E040034155A /* LCToolTests.swift */; };
+		870AAF9C1F944E040034155A /* LCToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF9B1F944E040034155A /* LCToolUITests.swift */; };
+		870AAFB31F9450660034155A /* LCDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAC1F9450660034155A /* LCDataBase.swift */; };
+		870AAFB41F9450660034155A /* LCTableConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAD1F9450660034155A /* LCTableConfig.swift */; };
+		870AAFB51F9450660034155A /* LCNetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAF1F9450660034155A /* LCNetCache.swift */; };
+		870AAFB71F9450660034155A /* LCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFB21F9450660034155A /* LCUtils.swift */; };
+		870AAFBC1F946E460034155A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFBA1F946E460034155A /* HomeViewController.swift */; };
+		870AAFBD1F946E460034155A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFBB1F946E460034155A /* HomeViewController.xib */; };
+		870AAFBF1F948B280034155A /* LCNetWorkExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFBE1F948B280034155A /* LCNetWorkExample.swift */; };
+		870AAFC31F948F130034155A /* LCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFC11F948F130034155A /* LCCell.swift */; };
+		870AAFC41F948F130034155A /* LCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFC21F948F130034155A /* LCCell.xib */; };
+		870AAFCC1F949CBF0034155A /* LCNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFCB1F949CBF0034155A /* LCNetWork.swift */; };
+		870AAFFD1F97544C0034155A /* LCDataBaseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */; };
+		870AB0001F9760BE0034155A /* LCDataBaseControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */; };
+		870AB0011F9760BE0034155A /* LCDataBaseControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		870AAF8D1F944E040034155A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 870AAF701F944E040034155A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 870AAF771F944E040034155A;
+			remoteInfo = LCTool;
+		};
+		870AAF981F944E040034155A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 870AAF701F944E040034155A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 870AAF771F944E040034155A;
+			remoteInfo = LCTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4FF61F6011C244ED499D037B /* Pods_LCTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LCTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		870AAF781F944E040034155A /* LCTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		870AAF7B1F944E040034155A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		870AAF7D1F944E040034155A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		870AAF821F944E040034155A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		870AAF851F944E040034155A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		870AAF871F944E040034155A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870AAF8C1F944E040034155A /* LCToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870AAF901F944E040034155A /* LCToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCToolTests.swift; sourceTree = "<group>"; };
+		870AAF921F944E040034155A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870AAF971F944E040034155A /* LCToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		870AAF9B1F944E040034155A /* LCToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCToolUITests.swift; sourceTree = "<group>"; };
+		870AAF9D1F944E040034155A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		870AAFAC1F9450660034155A /* LCDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDataBase.swift; sourceTree = "<group>"; };
+		870AAFAD1F9450660034155A /* LCTableConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTableConfig.swift; sourceTree = "<group>"; };
+		870AAFAF1F9450660034155A /* LCNetCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetCache.swift; sourceTree = "<group>"; };
+		870AAFB21F9450660034155A /* LCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCUtils.swift; sourceTree = "<group>"; };
+		870AAFBA1F946E460034155A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		870AAFBB1F946E460034155A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		870AAFBE1F948B280034155A /* LCNetWorkExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCNetWorkExample.swift; sourceTree = "<group>"; };
+		870AAFC11F948F130034155A /* LCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCCell.swift; sourceTree = "<group>"; };
+		870AAFC21F948F130034155A /* LCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCCell.xib; sourceTree = "<group>"; };
+		870AAFCB1F949CBF0034155A /* LCNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCNetWork.swift; sourceTree = "<group>"; };
+		870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDataBaseExample.swift; sourceTree = "<group>"; };
+		870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDataBaseControllerViewController.swift; sourceTree = "<group>"; };
+		870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCDataBaseControllerViewController.xib; sourceTree = "<group>"; };
+		9DAF337C723F78CCEAC16D1F /* Pods-LCTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.release.xcconfig"; sourceTree = "<group>"; };
+		E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		870AAF751F944E040034155A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544A1F080DEC0DF08DD943D0 /* Pods_LCTool.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF891F944E040034155A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF941F944E040034155A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		870AAF6F1F944E040034155A = {
+			isa = PBXGroup;
+			children = (
+				870AAF7A1F944E040034155A /* LCTool */,
+				870AAF8F1F944E040034155A /* LCToolTests */,
+				870AAF9A1F944E040034155A /* LCToolUITests */,
+				870AAF791F944E040034155A /* Products */,
+				E0F1810C790BA4D52F9E6A69 /* Pods */,
+				CFBA11FE66A2A2D3E2DCF676 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		870AAF791F944E040034155A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				870AAF781F944E040034155A /* LCTool.app */,
+				870AAF8C1F944E040034155A /* LCToolTests.xctest */,
+				870AAF971F944E040034155A /* LCToolUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		870AAF7A1F944E040034155A /* LCTool */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFC01F948EF70034155A /* View */,
+				870AAFAA1F9450660034155A /* LCTool */,
+				870AAFA91F944E3C0034155A /* SystemFiles */,
+				870AAFC61F948F4C0034155A /* Main */,
+			);
+			path = LCTool;
+			sourceTree = "<group>";
+		};
+		870AAF8F1F944E040034155A /* LCToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				870AAF901F944E040034155A /* LCToolTests.swift */,
+				870AAF921F944E040034155A /* Info.plist */,
+			);
+			path = LCToolTests;
+			sourceTree = "<group>";
+		};
+		870AAF9A1F944E040034155A /* LCToolUITests */ = {
+			isa = PBXGroup;
+			children = (
+				870AAF9B1F944E040034155A /* LCToolUITests.swift */,
+				870AAF9D1F944E040034155A /* Info.plist */,
+			);
+			path = LCToolUITests;
+			sourceTree = "<group>";
+		};
+		870AAFA91F944E3C0034155A /* SystemFiles */ = {
+			isa = PBXGroup;
+			children = (
+				870AAF7D1F944E040034155A /* ViewController.swift */,
+				870AAF821F944E040034155A /* Assets.xcassets */,
+				870AAF841F944E040034155A /* LaunchScreen.storyboard */,
+			);
+			path = SystemFiles;
+			sourceTree = "<group>";
+		};
+		870AAFAA1F9450660034155A /* LCTool */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFAB1F9450660034155A /* LCDataBase */,
+				870AAFAE1F9450660034155A /* LCNetWork */,
+				870AAFB11F9450660034155A /* LCUtils */,
+			);
+			path = LCTool;
+			sourceTree = "<group>";
+		};
+		870AAFAB1F9450660034155A /* LCDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFAC1F9450660034155A /* LCDataBase.swift */,
+				870AAFAD1F9450660034155A /* LCTableConfig.swift */,
+			);
+			path = LCDataBase;
+			sourceTree = "<group>";
+		};
+		870AAFAE1F9450660034155A /* LCNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFAF1F9450660034155A /* LCNetCache.swift */,
+				870AAFCB1F949CBF0034155A /* LCNetWork.swift */,
+			);
+			path = LCNetWork;
+			sourceTree = "<group>";
+		};
+		870AAFB11F9450660034155A /* LCUtils */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFB21F9450660034155A /* LCUtils.swift */,
+			);
+			path = LCUtils;
+			sourceTree = "<group>";
+		};
+		870AAFC01F948EF70034155A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				870AAFC11F948F130034155A /* LCCell.swift */,
+				870AAFC21F948F130034155A /* LCCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		870AAFC61F948F4C0034155A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				870AAF7B1F944E040034155A /* AppDelegate.swift */,
+				870AAF871F944E040034155A /* Info.plist */,
+				870AAFBA1F946E460034155A /* HomeViewController.swift */,
+				870AAFBE1F948B280034155A /* LCNetWorkExample.swift */,
+				870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */,
+				870AAFBB1F946E460034155A /* HomeViewController.xib */,
+				870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */,
+				870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		CFBA11FE66A2A2D3E2DCF676 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FF61F6011C244ED499D037B /* Pods_LCTool.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0F1810C790BA4D52F9E6A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */,
+				9DAF337C723F78CCEAC16D1F /* Pods-LCTool.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		870AAF771F944E040034155A /* LCTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870AAFA01F944E040034155A /* Build configuration list for PBXNativeTarget "LCTool" */;
+			buildPhases = (
+				37823BE0CB8DCBA76FA62937 /* [CP] Check Pods Manifest.lock */,
+				870AAF741F944E040034155A /* Sources */,
+				870AAF751F944E040034155A /* Frameworks */,
+				870AAF761F944E040034155A /* Resources */,
+				744CA6840F8BAACC1221ECCD /* [CP] Embed Pods Frameworks */,
+				2F644960CB32D170A72FD0E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LCTool;
+			productName = LCTool;
+			productReference = 870AAF781F944E040034155A /* LCTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		870AAF8B1F944E040034155A /* LCToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870AAFA31F944E040034155A /* Build configuration list for PBXNativeTarget "LCToolTests" */;
+			buildPhases = (
+				870AAF881F944E040034155A /* Sources */,
+				870AAF891F944E040034155A /* Frameworks */,
+				870AAF8A1F944E040034155A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870AAF8E1F944E040034155A /* PBXTargetDependency */,
+			);
+			name = LCToolTests;
+			productName = LCToolTests;
+			productReference = 870AAF8C1F944E040034155A /* LCToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		870AAF961F944E040034155A /* LCToolUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 870AAFA61F944E040034155A /* Build configuration list for PBXNativeTarget "LCToolUITests" */;
+			buildPhases = (
+				870AAF931F944E040034155A /* Sources */,
+				870AAF941F944E040034155A /* Frameworks */,
+				870AAF951F944E040034155A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				870AAF991F944E040034155A /* PBXTargetDependency */,
+			);
+			name = LCToolUITests;
+			productName = LCToolUITests;
+			productReference = 870AAF971F944E040034155A /* LCToolUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		870AAF701F944E040034155A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "懒猫";
+				TargetAttributes = {
+					870AAF771F944E040034155A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					870AAF8B1F944E040034155A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 870AAF771F944E040034155A;
+					};
+					870AAF961F944E040034155A = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 870AAF771F944E040034155A;
+					};
+				};
+			};
+			buildConfigurationList = 870AAF731F944E040034155A /* Build configuration list for PBXProject "LCTool" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 870AAF6F1F944E040034155A;
+			productRefGroup = 870AAF791F944E040034155A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				870AAF771F944E040034155A /* LCTool */,
+				870AAF8B1F944E040034155A /* LCToolTests */,
+				870AAF961F944E040034155A /* LCToolUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		870AAF761F944E040034155A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870AAF861F944E040034155A /* LaunchScreen.storyboard in Resources */,
+				870AAF831F944E040034155A /* Assets.xcassets in Resources */,
+				870AB0011F9760BE0034155A /* LCDataBaseControllerViewController.xib in Resources */,
+				870AAFC41F948F130034155A /* LCCell.xib in Resources */,
+				870AAFBD1F946E460034155A /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF8A1F944E040034155A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF951F944E040034155A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F644960CB32D170A72FD0E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCTool/Pods-LCTool-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37823BE0CB8DCBA76FA62937 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LCTool-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		744CA6840F8BAACC1221ECCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LCTool/Pods-LCTool-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LCTool/Pods-LCTool-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		870AAF741F944E040034155A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870AAFB31F9450660034155A /* LCDataBase.swift in Sources */,
+				870AAFFD1F97544C0034155A /* LCDataBaseExample.swift in Sources */,
+				870AAF7E1F944E040034155A /* ViewController.swift in Sources */,
+				870AAF7C1F944E040034155A /* AppDelegate.swift in Sources */,
+				870AAFBC1F946E460034155A /* HomeViewController.swift in Sources */,
+				870AAFBF1F948B280034155A /* LCNetWorkExample.swift in Sources */,
+				870AAFB51F9450660034155A /* LCNetCache.swift in Sources */,
+				870AAFB41F9450660034155A /* LCTableConfig.swift in Sources */,
+				870AAFB71F9450660034155A /* LCUtils.swift in Sources */,
+				870AAFC31F948F130034155A /* LCCell.swift in Sources */,
+				870AB0001F9760BE0034155A /* LCDataBaseControllerViewController.swift in Sources */,
+				870AAFCC1F949CBF0034155A /* LCNetWork.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF881F944E040034155A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870AAF911F944E040034155A /* LCToolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		870AAF931F944E040034155A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870AAF9C1F944E040034155A /* LCToolUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		870AAF8E1F944E040034155A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 870AAF771F944E040034155A /* LCTool */;
+			targetProxy = 870AAF8D1F944E040034155A /* PBXContainerItemProxy */;
+		};
+		870AAF991F944E040034155A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 870AAF771F944E040034155A /* LCTool */;
+			targetProxy = 870AAF981F944E040034155A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		870AAF841F944E040034155A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				870AAF851F944E040034155A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		870AAF9E1F944E040034155A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		870AAF9F1F944E040034155A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		870AAFA11F944E040034155A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCTool/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		870AAFA21F944E040034155A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DAF337C723F78CCEAC16D1F /* Pods-LCTool.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCTool/Main/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCTool;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		870AAFA41F944E040034155A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCTool.app/LCTool";
+			};
+			name = Debug;
+		};
+		870AAFA51F944E040034155A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LCTool.app/LCTool";
+			};
+			name = Release;
+		};
+		870AAFA71F944E040034155A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LCTool;
+			};
+			name = Debug;
+		};
+		870AAFA81F944E040034155A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWA86DJ7PK;
+				INFOPLIST_FILE = LCToolUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lazycat.www.LCToolUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LCTool;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		870AAF731F944E040034155A /* Build configuration list for PBXProject "LCTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870AAF9E1F944E040034155A /* Debug */,
+				870AAF9F1F944E040034155A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870AAFA01F944E040034155A /* Build configuration list for PBXNativeTarget "LCTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870AAFA11F944E040034155A /* Debug */,
+				870AAFA21F944E040034155A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870AAFA31F944E040034155A /* Build configuration list for PBXNativeTarget "LCToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870AAFA41F944E040034155A /* Debug */,
+				870AAFA51F944E040034155A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		870AAFA61F944E040034155A /* Build configuration list for PBXNativeTarget "LCToolUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				870AAFA71F944E040034155A /* Debug */,
+				870AAFA81F944E040034155A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 870AAF701F944E040034155A /* Project object */;
+}
