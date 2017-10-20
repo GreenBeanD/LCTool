@@ -9,7 +9,7 @@
 import UIKit
 import FMDB
 
-class LCDataBase: NSObject {
+open class LCDataBase: NSObject {
 
     public enum ErrorExplain: Error {
         case NoExistTable
@@ -17,10 +17,10 @@ class LCDataBase: NSObject {
     }
 
     /** 单例对象 */
-    open static let share = LCDataBase()
+    @objc open static let share = LCDataBase()
 
     /** 数据库对象 */
-    open var db:FMDatabase {
+    @objc open var db:FMDatabase {
         if self.cacheDB != nil {
             self.cacheDB?.open()
             return self.cacheDB!
@@ -31,7 +31,7 @@ class LCDataBase: NSObject {
     }
 
     /** 数据库操作队列对象 */
-    open var dbQuene: FMDatabaseQueue {
+    @objc open var dbQuene: FMDatabaseQueue {
         if self.cacheDBQuene != nil {
             return self.cacheDBQuene!
         }
@@ -40,9 +40,9 @@ class LCDataBase: NSObject {
     }
 
     /** 增量路径  path/path/... */
-    open var appendPath: String = ""
+    @objc open var appendPath: String = ""
     /** 数据库名字 */
-    open var dataBaseName: String = "lcDataBase"
+    @objc open var dataBaseName: String = "lcDataBase"
 
     // 存储路径
     private var path: String {
@@ -64,18 +64,18 @@ class LCDataBase: NSObject {
     }
 
     /** 创建表 */
-    open func creatTable(sql: String) throws -> Void {
+    @objc open func creatTable(sql: String) throws -> Void {
         try self.executeSqlUpdate(sql: sql, arguments: nil)
     }
 
     /** 删除表 */
-    open func deleteTable(tableName: String) throws {
+    @objc open func deleteTable(tableName: String) throws {
         let sql = "DROP TABLE IF EXISTS \(tableName)"
         try self.executeSqlUpdate(sql: sql, arguments: nil)
     }
 
     /** 查询数据库中是否存在该表，如果不存在，就创建该表 */
-    open func isExistThisTable(config: LCTableConfig) {
+    @objc open func isExistThisTable(config: LCTableConfig) {
         if config.isExistTable {
             return
         }
@@ -92,7 +92,7 @@ class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Update语句 */
-    open func executeSqlUpdate(sql: String, arguments: [Any]!) throws -> Void {
+    @objc open func executeSqlUpdate(sql: String, arguments: [Any]!) throws -> Void {
         var isError:Error?
         self.dbQuene.inDatabase { (db) in
             do {
@@ -107,7 +107,7 @@ class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Update语句 自动检验该表是否存在，不存在则创建 */
-    open func executeSqlUpdate(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Void {
+    @objc open func executeSqlUpdate(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Void {
         self.isExistThisTable(config: config)
         if !config.isExistTable {
             throw LCDataBase.ErrorExplain.NoExistTable
@@ -156,7 +156,7 @@ class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Query语句 针对OC的查询方法 */
-    open func executeSqlQueryForOC(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Any {
+    @objc open func executeSqlQueryForOC(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Any {
         let result = try self.executeSqlQuery(sql: sql, arguments: arguments, config: config)
         if result == nil {
             throw ErrorExplain.Other
@@ -166,11 +166,6 @@ class LCDataBase: NSObject {
 }
 
 extension String {
-
-    /** 快速创建一个空字符串 */
-//    public static func lcBeginSql() -> String {
-//        return ""
-//    }
 
     /** 增 */
     public static func lcInsert(tableName: String) -> String {
@@ -247,11 +242,7 @@ extension String {
     }
 }
 
-extension NSString {
-    /** 快速创建一个空字符串 */
-//    public static func lcBeginSql() -> NSString {
-//        return ""
-//    }
+@objc extension NSString {
 
     /** 增 */
     public static func lcInsert(tableName: NSString) -> NSString {

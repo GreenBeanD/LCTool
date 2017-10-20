@@ -24,6 +24,11 @@ class LCDataBaseExample: NSObject {
     let t_testTableA = LCTableConfig.initConfigure().with(tableName: "yourTableName").with(tableField: "colomnName1 TEXT NOT NULL UNIQUE, colomnName2 TEXT NOT NULL, colomnName3 TEXT NOT NULL")
 
 
+    //NOTE:LCTableConfig也兼容了OC使用，使用方法如下，需要注意的是调用方法后不会自动提示参数，只需要记住参数类型直接赋值即可，顺序不要写错
+    /*
+    LCTableConfig *config = LCTableConfig.initConfigure.withTableName(@"yourTableName").withColumn(@"yourTableColumn1",DateBaseTypeTEXT).withColumnOption(@"yourTableColumn2",DateBaseTypeTEXT,@"NOT NULL").end;
+     */
+    //在OC中对数据库的操作与Swift大同小异，需要注意的是在批量操作的情况下需要引入FMDB的头文件
 
     //接下来是对这张表的增删改查
     //插入一条数据

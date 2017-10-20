@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class LCNetWork: NSObject {
+open class LCNetWork: NSObject {
 
     // 网络类型:未知网络,无网络,手机网络,WIFI网络
     @objc public enum LCNetWorkStatusType: Int {
@@ -22,7 +22,7 @@ class LCNetWork: NSObject {
 
     private var isOpenLog = false
     /** Manager对象，负责管理所有的网络请求 */
-    static let manager = LCNetWork()
+    @objc open static let manager = LCNetWork()
     //网络请求管理器
     private lazy var sessionManager: SessionManager = {
         let configuration = URLSessionConfiguration.default
@@ -47,46 +47,46 @@ class LCNetWork: NSObject {
     // MARK:- 请求配置模块
 
     /** 基础URL */
-    open var intactUrl = ""
+    @objc open var intactUrl = ""
 
     /** 请求串格式 */
-    open var requestSerializer: LCRequestSerializer = .JSON {
+    @objc open var requestSerializer: LCRequestSerializer = .JSON {
         willSet {
             LCNetWork.tempRequestSerializer = newValue
         }
     }
 
     /** 临时更改请求串格式,此属性只会影响一次网络请求 */
-    open static var tempRequestSerializer: LCRequestSerializer = .JSON
+    @objc open static var tempRequestSerializer: LCRequestSerializer = .JSON
 
     /** 常规请求时间限制 */
-    open var requestTimeOutInterval: TimeInterval = 15
+    @objc open var requestTimeOutInterval: TimeInterval = 15
 
     /** 网络监测Host */
-    open var netWorkMonitorHost = "https://github.com/Alamofire/Alamofire.git"
+    @objc open var netWorkMonitorHost = "https://github.com/Alamofire/Alamofire.git"
 
     /** 开启日志打印 */
-    open func openLog() {
+    @objc open func openLog() {
         self.isOpenLog = true
     }
 
     /** 关闭日志打印,默认关闭 */
-    open func closeLog() {
+    @objc open func closeLog() {
         self.isOpenLog = false
     }
 
     /** 开启网络监测 */
-    open func startMonitoring() {
+    @objc open func startMonitoring() {
         self.netMonitor?.startListening()
     }
 
     //关闭网络监测
-    open func stopMonitoring() {
+    @objc open func stopMonitoring() {
         self.netMonitor?.stopListening()
     }
 
     /** 网络状态改变的回调 */
-    open func netWorkStatus(by: @escaping (_ status:LCNetWorkStatusType) -> Void) {
+    @objc open func netWorkStatus(by: @escaping (_ status:LCNetWorkStatusType) -> Void) {
         self.netMonitor?.listener = { Status in
             switch Status {
             case .unknown:
@@ -106,23 +106,23 @@ class LCNetWork: NSObject {
     }
 
     /** 网络连接是否可用 */
-    open func isReachable() -> Bool {
+    @objc open func isReachable() -> Bool {
         return self.netMonitor?.isReachable ?? false
     }
 
     /** 蜂窝连接是否可用 */
-    open func isReachableViaWWAN() -> Bool {
+    @objc open func isReachableViaWWAN() -> Bool {
         return self.netMonitor?.isReachableOnWWAN ?? false
     }
 
     /** WIFI连接是否可用 */
-    open func isReachableViaWiFi() -> Bool {
+    @objc open func isReachableViaWiFi() -> Bool {
         return self.netMonitor?.isReachableOnEthernetOrWiFi ?? false
     }
 
     //MARK:- 请求管理模块
     /** 取消请求任务 */
-    open func cancelTask(withUrl: String) {
+    @objc open func cancelTask(withUrl: String) {
         let task = self.netTaskCache[withUrl]
         if task == nil {
             return
@@ -140,7 +140,7 @@ class LCNetWork: NSObject {
      *  @param successClosure    请求成功的回调
      *  @param failtureClosure    请求失败的回调
      */
-    open static func GET(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess? , failtureClosure: LCHttpRequestFailed?) {
+    @objc open static func GET(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess? , failtureClosure: LCHttpRequestFailed?) {
         var reflectSerializer = LCNetWork.manager.requestSerializer
         if reflectSerializer != LCNetWork.tempRequestSerializer {
             reflectSerializer = LCNetWork.tempRequestSerializer
@@ -157,7 +157,7 @@ class LCNetWork: NSObject {
      *  @param successClosure    请求成功的回调
      *  @param failtureClosure    请求失败的回调
      */
-    open static func POST(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
+    @objc open static func POST(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
         var reflectSerializer = LCNetWork.manager.requestSerializer
         if reflectSerializer != LCNetWork.tempRequestSerializer {
             reflectSerializer = LCNetWork.tempRequestSerializer
@@ -176,14 +176,14 @@ class LCNetWork: NSObject {
     ///   - data: 文件
     ///   - successClosure: 请求成功的回调
     ///   - failtureClosure: 请求失败的回调
-    open static func UPLOAD(url: String ,parameters: [String: String]?, data: Array<Dictionary<String,Any>>, successClosure: LCHttpRequestSuccess? , failtureClosure: LCHttpRequestFailed?) {
+    @objc open static func UPLOAD(url: String ,parameters: [String: String]?, data: Array<Dictionary<String,Any>>, successClosure: LCHttpRequestSuccess? , failtureClosure: LCHttpRequestFailed?) {
         self.manager.UPLOADImplement(url: url, parameters: parameters, data: data, successClosure: successClosure, failtureClosure: failtureClosure)
     }
 
     //MARK:- 具有缓存功能的网络请求模块
     //请求参数配置受全局配置影响
     //GET
-    open static func GETWithCache(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
+    @objc open static func GETWithCache(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
         var reflectSerializer = LCNetWork.manager.requestSerializer
         if reflectSerializer != LCNetWork.tempRequestSerializer {
             reflectSerializer = LCNetWork.tempRequestSerializer
@@ -193,7 +193,7 @@ class LCNetWork: NSObject {
     }
 
     //POST
-    open static func POSTWithCache(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
+    @objc open static func POSTWithCache(url: String ,parameters: [String: Any]?, successClosure: LCHttpRequestSuccess?, failtureClosure: LCHttpRequestFailed?) {
         var reflectSerializer = LCNetWork.manager.requestSerializer
         if reflectSerializer != LCNetWork.tempRequestSerializer {
             reflectSerializer = LCNetWork.tempRequestSerializer
