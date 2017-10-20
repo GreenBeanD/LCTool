@@ -24,7 +24,7 @@ open class LCTableConfig: NSObject {
         case NULL
     }
 
-    private let typeArray: [String] = ["TEXT","INTEGER","REAL","BLOB","NULL"]
+    let typeArray: [String] = ["TEXT","INTEGER","REAL","BLOB","NULL"]
 
     // 表名
     @objc open var tableName: String = ""
