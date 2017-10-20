@@ -14,19 +14,19 @@
 		870AAF861F944E040034155A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870AAF841F944E040034155A /* LaunchScreen.storyboard */; };
 		870AAF911F944E040034155A /* LCToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF901F944E040034155A /* LCToolTests.swift */; };
 		870AAF9C1F944E040034155A /* LCToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAF9B1F944E040034155A /* LCToolUITests.swift */; };
-		870AAFB31F9450660034155A /* LCDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAC1F9450660034155A /* LCDataBase.swift */; };
-		870AAFB41F9450660034155A /* LCTableConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAD1F9450660034155A /* LCTableConfig.swift */; };
-		870AAFB51F9450660034155A /* LCNetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFAF1F9450660034155A /* LCNetCache.swift */; };
-		870AAFB71F9450660034155A /* LCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFB21F9450660034155A /* LCUtils.swift */; };
 		870AAFBC1F946E460034155A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFBA1F946E460034155A /* HomeViewController.swift */; };
 		870AAFBD1F946E460034155A /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFBB1F946E460034155A /* HomeViewController.xib */; };
 		870AAFBF1F948B280034155A /* LCNetWorkExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFBE1F948B280034155A /* LCNetWorkExample.swift */; };
 		870AAFC31F948F130034155A /* LCCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFC11F948F130034155A /* LCCell.swift */; };
 		870AAFC41F948F130034155A /* LCCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFC21F948F130034155A /* LCCell.xib */; };
-		870AAFCC1F949CBF0034155A /* LCNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFCB1F949CBF0034155A /* LCNetWork.swift */; };
 		870AAFFD1F97544C0034155A /* LCDataBaseExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */; };
 		870AB0001F9760BE0034155A /* LCDataBaseControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */; };
 		870AB0011F9760BE0034155A /* LCDataBaseControllerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */; };
+		870AB00B1F99B52A0034155A /* LCDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0041F99B5290034155A /* LCDataBase.swift */; };
+		870AB00C1F99B52A0034155A /* LCTableConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0051F99B5290034155A /* LCTableConfig.swift */; };
+		870AB00D1F99B52A0034155A /* LCNetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0071F99B5290034155A /* LCNetCache.swift */; };
+		870AB00E1F99B52A0034155A /* LCNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0081F99B5290034155A /* LCNetWork.swift */; };
+		870AB00F1F99B52A0034155A /* LCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB00A1F99B5290034155A /* LCUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,19 +60,19 @@
 		870AAF971F944E040034155A /* LCToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		870AAF9B1F944E040034155A /* LCToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCToolUITests.swift; sourceTree = "<group>"; };
 		870AAF9D1F944E040034155A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		870AAFAC1F9450660034155A /* LCDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDataBase.swift; sourceTree = "<group>"; };
-		870AAFAD1F9450660034155A /* LCTableConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTableConfig.swift; sourceTree = "<group>"; };
-		870AAFAF1F9450660034155A /* LCNetCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetCache.swift; sourceTree = "<group>"; };
-		870AAFB21F9450660034155A /* LCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCUtils.swift; sourceTree = "<group>"; };
 		870AAFBA1F946E460034155A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		870AAFBB1F946E460034155A /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		870AAFBE1F948B280034155A /* LCNetWorkExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCNetWorkExample.swift; sourceTree = "<group>"; };
 		870AAFC11F948F130034155A /* LCCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCCell.swift; sourceTree = "<group>"; };
 		870AAFC21F948F130034155A /* LCCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCCell.xib; sourceTree = "<group>"; };
-		870AAFCB1F949CBF0034155A /* LCNetWork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCNetWork.swift; sourceTree = "<group>"; };
 		870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDataBaseExample.swift; sourceTree = "<group>"; };
 		870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCDataBaseControllerViewController.swift; sourceTree = "<group>"; };
 		870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCDataBaseControllerViewController.xib; sourceTree = "<group>"; };
+		870AB0041F99B5290034155A /* LCDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCDataBase.swift; sourceTree = "<group>"; };
+		870AB0051F99B5290034155A /* LCTableConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCTableConfig.swift; sourceTree = "<group>"; };
+		870AB0071F99B5290034155A /* LCNetCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetCache.swift; sourceTree = "<group>"; };
+		870AB0081F99B5290034155A /* LCNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetWork.swift; sourceTree = "<group>"; };
+		870AB00A1F99B5290034155A /* LCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCUtils.swift; sourceTree = "<group>"; };
 		9DAF337C723F78CCEAC16D1F /* Pods-LCTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.release.xcconfig"; sourceTree = "<group>"; };
 		E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +106,7 @@
 		870AAF6F1F944E040034155A = {
 			isa = PBXGroup;
 			children = (
+				870AB0021F99B5290034155A /* LCToolKit */,
 				870AAF7A1F944E040034155A /* LCTool */,
 				870AAF8F1F944E040034155A /* LCToolTests */,
 				870AAF9A1F944E040034155A /* LCToolUITests */,
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				870AAFC01F948EF70034155A /* View */,
-				870AAFAA1F9450660034155A /* LCTool */,
 				870AAFA91F944E3C0034155A /* SystemFiles */,
 				870AAFC61F948F4C0034155A /* Main */,
 			);
@@ -164,42 +164,6 @@
 			path = SystemFiles;
 			sourceTree = "<group>";
 		};
-		870AAFAA1F9450660034155A /* LCTool */ = {
-			isa = PBXGroup;
-			children = (
-				870AAFAB1F9450660034155A /* LCDataBase */,
-				870AAFAE1F9450660034155A /* LCNetWork */,
-				870AAFB11F9450660034155A /* LCUtils */,
-			);
-			path = LCTool;
-			sourceTree = "<group>";
-		};
-		870AAFAB1F9450660034155A /* LCDataBase */ = {
-			isa = PBXGroup;
-			children = (
-				870AAFAC1F9450660034155A /* LCDataBase.swift */,
-				870AAFAD1F9450660034155A /* LCTableConfig.swift */,
-			);
-			path = LCDataBase;
-			sourceTree = "<group>";
-		};
-		870AAFAE1F9450660034155A /* LCNetWork */ = {
-			isa = PBXGroup;
-			children = (
-				870AAFAF1F9450660034155A /* LCNetCache.swift */,
-				870AAFCB1F949CBF0034155A /* LCNetWork.swift */,
-			);
-			path = LCNetWork;
-			sourceTree = "<group>";
-		};
-		870AAFB11F9450660034155A /* LCUtils */ = {
-			isa = PBXGroup;
-			children = (
-				870AAFB21F9450660034155A /* LCUtils.swift */,
-			);
-			path = LCUtils;
-			sourceTree = "<group>";
-		};
 		870AAFC01F948EF70034155A /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +186,42 @@
 				870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		870AB0021F99B5290034155A /* LCToolKit */ = {
+			isa = PBXGroup;
+			children = (
+				870AB0031F99B5290034155A /* LCDataBase */,
+				870AB0061F99B5290034155A /* LCNetWork */,
+				870AB0091F99B5290034155A /* LCUtils */,
+			);
+			path = LCToolKit;
+			sourceTree = "<group>";
+		};
+		870AB0031F99B5290034155A /* LCDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				870AB0041F99B5290034155A /* LCDataBase.swift */,
+				870AB0051F99B5290034155A /* LCTableConfig.swift */,
+			);
+			path = LCDataBase;
+			sourceTree = "<group>";
+		};
+		870AB0061F99B5290034155A /* LCNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				870AB0071F99B5290034155A /* LCNetCache.swift */,
+				870AB0081F99B5290034155A /* LCNetWork.swift */,
+			);
+			path = LCNetWork;
+			sourceTree = "<group>";
+		};
+		870AB0091F99B5290034155A /* LCUtils */ = {
+			isa = PBXGroup;
+			children = (
+				870AB00A1F99B5290034155A /* LCUtils.swift */,
+			);
+			path = LCUtils;
 			sourceTree = "<group>";
 		};
 		CFBA11FE66A2A2D3E2DCF676 /* Frameworks */ = {
@@ -436,18 +436,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870AAFB31F9450660034155A /* LCDataBase.swift in Sources */,
 				870AAFFD1F97544C0034155A /* LCDataBaseExample.swift in Sources */,
+				870AB00C1F99B52A0034155A /* LCTableConfig.swift in Sources */,
 				870AAF7E1F944E040034155A /* ViewController.swift in Sources */,
+				870AB00D1F99B52A0034155A /* LCNetCache.swift in Sources */,
+				870AB00F1F99B52A0034155A /* LCUtils.swift in Sources */,
 				870AAF7C1F944E040034155A /* AppDelegate.swift in Sources */,
+				870AB00E1F99B52A0034155A /* LCNetWork.swift in Sources */,
 				870AAFBC1F946E460034155A /* HomeViewController.swift in Sources */,
 				870AAFBF1F948B280034155A /* LCNetWorkExample.swift in Sources */,
-				870AAFB51F9450660034155A /* LCNetCache.swift in Sources */,
-				870AAFB41F9450660034155A /* LCTableConfig.swift in Sources */,
-				870AAFB71F9450660034155A /* LCUtils.swift in Sources */,
 				870AAFC31F948F130034155A /* LCCell.swift in Sources */,
 				870AB0001F9760BE0034155A /* LCDataBaseControllerViewController.swift in Sources */,
-				870AAFCC1F949CBF0034155A /* LCNetWork.swift in Sources */,
+				870AB00B1F99B52A0034155A /* LCDataBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
