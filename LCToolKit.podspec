@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.name         = 'LCToolKit'
-    s.version      = '1.0.3'
-    s.summary      = 'Some encapsulation about Alamofire, FMDB and so on.'
+    s.version      = '1.1.0'
+    s.summary      = 'Some encapsulation and common function.'
     s.homepage     = 'https://github.com/GreenBeanD/LCTool'
     s.license      = 'MIT'
     s.authors      = {'LazyCat' => 'dxyrainbow@163.com'}
