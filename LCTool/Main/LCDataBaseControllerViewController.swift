@@ -13,7 +13,7 @@ class LCDataBaseControllerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationItem.title = "数据库操作示例"
     }
 
     let example = LCDataBaseExample()

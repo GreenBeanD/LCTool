@@ -92,7 +92,7 @@ open class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Update语句 */
-    @objc open func executeSqlUpdate(sql: String, arguments: [Any]!) throws -> Void {
+    @objc open func executeSqlUpdate(sql: String, arguments: [Any]?) throws -> Void {
         var isError:Error?
         self.dbQuene.inDatabase { (db) in
             do {
@@ -107,7 +107,7 @@ open class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Update语句 自动检验该表是否存在，不存在则创建 */
-    @objc open func executeSqlUpdate(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Void {
+    @objc open func executeSqlUpdate(sql: String, arguments: [Any]?, config: LCTableConfig) throws -> Void {
         self.isExistThisTable(config: config)
         if !config.isExistTable {
             throw LCDataBase.ErrorExplain.NoExistTable
@@ -118,7 +118,7 @@ open class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Query语句 */
-    open func executeSqlQuery(sql: String, arguments: [Any]!) throws -> Array<Dictionary<AnyHashable, Any>>? {
+    open func executeSqlQuery(sql: String, arguments: [Any]?) throws -> Array<Dictionary<AnyHashable, Any>>? {
         var resultArray: [Dictionary<AnyHashable, Any>] = []
         var isError:Error?
         self.dbQuene.inDatabase { (db) in
@@ -144,7 +144,7 @@ open class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Query语句 自动检验该表是否存在，不存在则创建 */
-    open func executeSqlQuery(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Array<Dictionary<AnyHashable, Any>>? {
+    open func executeSqlQuery(sql: String, arguments: [Any]?, config: LCTableConfig) throws -> Array<Dictionary<AnyHashable, Any>>? {
         self.isExistThisTable(config: config)
         if !config.isExistTable {
             throw LCDataBase.ErrorExplain.NoExistTable
@@ -156,7 +156,7 @@ open class LCDataBase: NSObject {
     }
 
     /** 执行SQL-Query语句 针对OC的查询方法 */
-    @objc open func executeSqlQueryForOC(sql: String, arguments: [Any]!, config: LCTableConfig) throws -> Any {
+    @objc open func executeSqlQueryForOC(sql: String, arguments: [Any]?, config: LCTableConfig) throws -> Any {
         let result = try self.executeSqlQuery(sql: sql, arguments: arguments, config: config)
         if result == nil {
             throw ErrorExplain.Other

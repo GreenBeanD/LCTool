@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LCCacheExample" customModule="LCTool" customModuleProvider="target">
+            <connections>
+                <outlet property="cacheImage" destination="FrO-Yj-yFb" id="SIx-yP-HLL"/>
+                <outlet property="cacheStr" destination="U6W-uq-COj" id="om6-d6-xC9"/>
+                <outlet property="currentImage" destination="8fa-Px-l9h" id="iqR-6j-OTg"/>
+                <outlet property="currentStr" destination="mfW-fQ-ZWa" id="7DW-7A-wsB"/>
+                <outlet property="segment" destination="nfG-17-eWg" id="sqP-6e-hHT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eEb-tx-SL5">
+                    <rect key="frame" x="30" y="60" width="92" height="30"/>
+                    <state key="normal" title="插入一条缓存"/>
+                    <connections>
+                        <action selector="insertCurrentStr:" destination="-1" eventType="touchUpInside" id="IcQ-Q7-QgA"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfW-fQ-ZWa">
+                    <rect key="frame" x="142" y="66.5" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZII-GY-hgr">
+                    <rect key="frame" x="30" y="120" width="62" height="30"/>
+                    <state key="normal" title="读取缓存"/>
+                    <connections>
+                        <action selector="readCacheStr:" destination="-1" eventType="touchUpInside" id="awX-5U-ArU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6W-uq-COj">
+                    <rect key="frame" x="142" y="127" width="35.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhm-B9-BYz">
+                    <rect key="frame" x="30" y="180" width="62" height="30"/>
+                    <state key="normal" title="删除缓存"/>
+                    <connections>
+                        <action selector="deleteStr:" destination="-1" eventType="touchUpInside" id="UES-4e-D0a"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="此处只演示一条缓存的操作，更多操作请自行尝试" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvp-nx-Wa4">
+                    <rect key="frame" x="30" y="31" width="270" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="不同表的缓存演示，请自由切换" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="39y-ab-GAn">
+                    <rect key="frame" x="30" y="230" width="172" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nfG-17-eWg">
+                    <rect key="frame" x="30" y="249.5" width="109" height="29"/>
+                    <segments>
+                        <segment title="默认表"/>
+                        <segment title="额外表"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentChange:" destination="-1" eventType="valueChanged" id="ONg-D8-QAy"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data类型数据演示，以图片为例" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4oV-G1-DXe">
+                    <rect key="frame" x="30" y="317.5" width="173.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsC-bt-7By">
+                    <rect key="frame" x="30" y="352" width="215" height="30"/>
+                    <state key="normal" title="从相册选择一张图片存入数据库"/>
+                    <connections>
+                        <action selector="pickImage:" destination="-1" eventType="touchUpInside" id="HZD-kg-5WH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="被存到数据库中的图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpG-sx-Z0i">
+                    <rect key="frame" x="30" y="402" width="110.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-Px-l9h">
+                    <rect key="frame" x="30" y="421.5" width="100" height="57"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="1m9-0k-Q0d"/>
+                        <constraint firstAttribute="width" constant="100" id="A13-DE-Rqm"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5N-iZ-97k">
+                    <rect key="frame" x="30" y="498.5" width="138" height="30"/>
+                    <state key="normal" title="读取数据库中的图片"/>
+                    <connections>
+                        <action selector="readImage:" destination="-1" eventType="touchUpInside" id="IT8-LB-ZIU"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="从数据库中读取的图" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOL-Hu-8yt">
+                    <rect key="frame" x="30" y="536" width="110.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FrO-Yj-yFb">
+                    <rect key="frame" x="30" y="555.5" width="100" height="57"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="57" id="WKK-9M-YBg"/>
+                        <constraint firstAttribute="width" constant="100" id="pYT-31-LUh"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没做适配，请用4.7+屏幕查看" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og7-H2-Ppn">
+                    <rect key="frame" x="30" y="44" width="160.5" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mfW-fQ-ZWa" firstAttribute="centerY" secondItem="eEb-tx-SL5" secondAttribute="centerY" id="0f7-qh-CaP"/>
+                <constraint firstItem="og7-H2-Ppn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="1B9-FW-SYd"/>
+                <constraint firstItem="39y-ab-GAn" firstAttribute="top" secondItem="rhm-B9-BYz" secondAttribute="bottom" constant="20" id="2yx-oY-rhg"/>
+                <constraint firstItem="gsC-bt-7By" firstAttribute="top" secondItem="4oV-G1-DXe" secondAttribute="bottom" constant="20" id="3zc-TK-Qn0"/>
+                <constraint firstItem="Mvp-nx-Wa4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="4Bv-6I-w9o"/>
+                <constraint firstItem="39y-ab-GAn" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="5qD-0a-bKi"/>
+                <constraint firstItem="eEb-tx-SL5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="6Uw-OZ-vYE"/>
+                <constraint firstItem="Mvp-nx-Wa4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="11" id="7Ym-H3-AsM"/>
+                <constraint firstItem="eEb-tx-SL5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="ALA-qS-cek"/>
+                <constraint firstItem="nfG-17-eWg" firstAttribute="top" secondItem="39y-ab-GAn" secondAttribute="bottom" constant="5" id="BxR-k6-L8C"/>
+                <constraint firstItem="s5N-iZ-97k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Byr-pV-8Tb"/>
+                <constraint firstItem="rhm-B9-BYz" firstAttribute="leading" secondItem="ZII-GY-hgr" secondAttribute="leading" id="Fqr-AT-rLu"/>
+                <constraint firstItem="BpG-sx-Z0i" firstAttribute="top" secondItem="gsC-bt-7By" secondAttribute="bottom" constant="20" id="Jc7-c2-V9u"/>
+                <constraint firstItem="4oV-G1-DXe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="KXS-BY-7fs"/>
+                <constraint firstItem="rOL-Hu-8yt" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Lpp-Sr-7fS"/>
+                <constraint firstItem="BpG-sx-Z0i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="MsH-zQ-bOc"/>
+                <constraint firstItem="U6W-uq-COj" firstAttribute="centerY" secondItem="ZII-GY-hgr" secondAttribute="centerY" id="OhV-Dg-oZD"/>
+                <constraint firstItem="nfG-17-eWg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="SGt-e8-NRL"/>
+                <constraint firstItem="FrO-Yj-yFb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="Uuj-q5-A8O"/>
+                <constraint firstItem="8fa-Px-l9h" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="d4p-kr-GTS"/>
+                <constraint firstItem="ZII-GY-hgr" firstAttribute="leading" secondItem="eEb-tx-SL5" secondAttribute="leading" id="ecW-BP-Rpw"/>
+                <constraint firstItem="mfW-fQ-ZWa" firstAttribute="leading" secondItem="eEb-tx-SL5" secondAttribute="trailing" constant="20" id="f4g-RS-wO6"/>
+                <constraint firstItem="gsC-bt-7By" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="gG7-W7-uOo"/>
+                <constraint firstItem="FrO-Yj-yFb" firstAttribute="top" secondItem="rOL-Hu-8yt" secondAttribute="bottom" constant="5" id="gbE-Ie-yPJ"/>
+                <constraint firstItem="rOL-Hu-8yt" firstAttribute="top" secondItem="s5N-iZ-97k" secondAttribute="bottom" constant="7.5" id="gly-K1-xws"/>
+                <constraint firstItem="og7-H2-Ppn" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="h7v-LW-eQ9"/>
+                <constraint firstItem="4oV-G1-DXe" firstAttribute="top" secondItem="nfG-17-eWg" secondAttribute="bottom" constant="40" id="hXR-7q-Hij"/>
+                <constraint firstItem="s5N-iZ-97k" firstAttribute="top" secondItem="8fa-Px-l9h" secondAttribute="bottom" constant="20" id="lmc-XM-IjO"/>
+                <constraint firstItem="ZII-GY-hgr" firstAttribute="top" secondItem="eEb-tx-SL5" secondAttribute="bottom" constant="30" id="pcK-Ij-SnF"/>
+                <constraint firstItem="U6W-uq-COj" firstAttribute="leading" secondItem="mfW-fQ-ZWa" secondAttribute="leading" id="skB-rk-dGd"/>
+                <constraint firstItem="rhm-B9-BYz" firstAttribute="top" secondItem="ZII-GY-hgr" secondAttribute="bottom" constant="30" id="weJ-bt-GYO"/>
+                <constraint firstItem="8fa-Px-l9h" firstAttribute="top" secondItem="BpG-sx-Z0i" secondAttribute="bottom" constant="5" id="yOG-qJ-6fj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

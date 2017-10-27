@@ -27,6 +27,9 @@
 		870AB00D1F99B52A0034155A /* LCNetCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0071F99B5290034155A /* LCNetCache.swift */; };
 		870AB00E1F99B52A0034155A /* LCNetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB0081F99B5290034155A /* LCNetWork.swift */; };
 		870AB00F1F99B52A0034155A /* LCUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870AB00A1F99B5290034155A /* LCUtils.swift */; };
+		872C52BB1FA2DDB800FF1C05 /* LCCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C52BA1FA2DDB800FF1C05 /* LCCache.swift */; };
+		872C52BE1FA30A9300FF1C05 /* LCCacheExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872C52BC1FA30A9300FF1C05 /* LCCacheExample.swift */; };
+		872C52BF1FA30A9300FF1C05 /* LCCacheExample.xib in Resources */ = {isa = PBXBuildFile; fileRef = 872C52BD1FA30A9300FF1C05 /* LCCacheExample.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +76,9 @@
 		870AB0071F99B5290034155A /* LCNetCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetCache.swift; sourceTree = "<group>"; };
 		870AB0081F99B5290034155A /* LCNetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCNetWork.swift; sourceTree = "<group>"; };
 		870AB00A1F99B5290034155A /* LCUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LCUtils.swift; sourceTree = "<group>"; };
+		872C52BA1FA2DDB800FF1C05 /* LCCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCCache.swift; sourceTree = "<group>"; };
+		872C52BC1FA30A9300FF1C05 /* LCCacheExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LCCacheExample.swift; sourceTree = "<group>"; };
+		872C52BD1FA30A9300FF1C05 /* LCCacheExample.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LCCacheExample.xib; sourceTree = "<group>"; };
 		9DAF337C723F78CCEAC16D1F /* Pods-LCTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.release.xcconfig"; sourceTree = "<group>"; };
 		E075D0CC049807A48298BC83 /* Pods-LCTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LCTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LCTool/Pods-LCTool.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -181,6 +187,8 @@
 				870AAFBA1F946E460034155A /* HomeViewController.swift */,
 				870AAFBE1F948B280034155A /* LCNetWorkExample.swift */,
 				870AAFFC1F97544B0034155A /* LCDataBaseExample.swift */,
+				872C52BC1FA30A9300FF1C05 /* LCCacheExample.swift */,
+				872C52BD1FA30A9300FF1C05 /* LCCacheExample.xib */,
 				870AAFBB1F946E460034155A /* HomeViewController.xib */,
 				870AAFFE1F9760BE0034155A /* LCDataBaseControllerViewController.swift */,
 				870AAFFF1F9760BE0034155A /* LCDataBaseControllerViewController.xib */,
@@ -191,6 +199,7 @@
 		870AB0021F99B5290034155A /* LCToolKit */ = {
 			isa = PBXGroup;
 			children = (
+				872C52B91FA2DD9100FF1C05 /* LCCache */,
 				870AB0031F99B5290034155A /* LCDataBase */,
 				870AB0061F99B5290034155A /* LCNetWork */,
 				870AB0091F99B5290034155A /* LCUtils */,
@@ -222,6 +231,14 @@
 				870AB00A1F99B5290034155A /* LCUtils.swift */,
 			);
 			path = LCUtils;
+			sourceTree = "<group>";
+		};
+		872C52B91FA2DD9100FF1C05 /* LCCache */ = {
+			isa = PBXGroup;
+			children = (
+				872C52BA1FA2DDB800FF1C05 /* LCCache.swift */,
+			);
+			path = LCCache;
 			sourceTree = "<group>";
 		};
 		CFBA11FE66A2A2D3E2DCF676 /* Frameworks */ = {
@@ -351,6 +368,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872C52BF1FA30A9300FF1C05 /* LCCacheExample.xib in Resources */,
 				870AAF861F944E040034155A /* LaunchScreen.storyboard in Resources */,
 				870AAF831F944E040034155A /* Assets.xcassets in Resources */,
 				870AB0011F9760BE0034155A /* LCDataBaseControllerViewController.xib in Resources */,
@@ -442,7 +460,9 @@
 				870AB00D1F99B52A0034155A /* LCNetCache.swift in Sources */,
 				870AB00F1F99B52A0034155A /* LCUtils.swift in Sources */,
 				870AAF7C1F944E040034155A /* AppDelegate.swift in Sources */,
+				872C52BB1FA2DDB800FF1C05 /* LCCache.swift in Sources */,
 				870AB00E1F99B52A0034155A /* LCNetWork.swift in Sources */,
+				872C52BE1FA30A9300FF1C05 /* LCCacheExample.swift in Sources */,
 				870AAFBC1F946E460034155A /* HomeViewController.swift in Sources */,
 				870AAFBF1F948B280034155A /* LCNetWorkExample.swift in Sources */,
 				870AAFC31F948F130034155A /* LCCell.swift in Sources */,

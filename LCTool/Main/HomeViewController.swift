@@ -13,7 +13,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
     @IBOutlet weak var tableView: UITableView!
 
-    var sourceArray:[String] = ["LCNetWork使用示例","LCDataBase使用示例"]
+    var sourceArray:[String] = ["LCNetWork使用示例","LCDataBase使用示例","LCCache使用示例"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         self.tableView.register(UINib.init(nibName: "LCCell", bundle: nil), forCellReuseIdentifier: "HomeCellID")
 
+        print(NSHomeDirectory())
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,8 +49,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             let vc = LCDataBaseControllerViewController()
             self.navigationController?.pushViewController(vc, animated: true)
         }
+        if cell.textLabel?.text == "LCCache使用示例" {
+            let vc = LCCacheExample()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
-    
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
